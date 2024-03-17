@@ -35,7 +35,21 @@
     margin-right: auto;
     width: 8em;
 }
+.picture-bg {
+    display: flex;
+    margin-top: 10%;
+    /* background-color: navy; */
+    border: ridge;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+}
 
+.picture {
+    /* margin-top: 10%; */
+    width: 200px;
+}
 .city {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
@@ -43,53 +57,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: aquamarine;
+    color: white
 }
 
 .weather {
-    color: aquamarine;
-    font-size: large;
-    position: absolute;
-    top:  15%;
-    left: 7%;  
+    color: white;
+    font-size: medium;
+ 
 }
 
 .temp {
-    color: aquamarine;
-    font-size: large;
-    position: absolute;
-    top:  25%;
-    left: 7%;   
+    color: navy;
+    font-size: large; 
 }
 
 .hum {
-    color: aquamarine;
+    color: navy;
     font-size: large;
-    position: absolute;
-    top:  30%;
-    left: 7%;   
 }
 
 .press {
-    color: aquamarine;
+    color: navy;
     font-size: large;
-    position: absolute;
-    top:  35%;
-    left: 7%;   
 }
 
 .wind {
-    color: aquamarine;
-    font-size: large;
-    position: absolute;
-    top:  40%;
-    left: 7%;   
-}
-
-.picture {
-    width: 150px;
-    position: absolute;
-    top:  20%;
-    left: 12%;
-    transform: translate(-50%,-50%);
+    color: navy;
+    font-size: large;  
 }
