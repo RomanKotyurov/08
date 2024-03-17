@@ -1,5 +1,6 @@
 .wrapper {
     display: flex;
+    align-items: center;
     flex-direction: column;
     max-width: 1080px;
     width: 100%;
@@ -9,20 +10,27 @@
 
 .button {
     flex-direction: column;
-    position: absolute;
-    top:  5%;
-    left: 8%;
-    width: 10%;
-    height: 3%;
-    background-color: goldenrod;
-    font-size: x-large;
-    padding: 3px;
-    border: ridge;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-top: 10%;
+    background-color: navy;
     border-color: wheat;
+    border: ridge;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    padding: 3px;
 }
 
 .text-Button {
-    color: wheat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin-top: 4%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: aquamarine;
     margin-left: auto;
     margin-right: auto;
     width: 8em;
