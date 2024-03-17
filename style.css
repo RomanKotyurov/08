@@ -44,11 +44,17 @@
     width: 150px;
     height: 150px;
     padding: 3px;
+    display: none;
+}
+.display-none {
+    display: inline;
 }
 
 .picture {
-    /* margin-top: 10%; */
-    width: 200px;
+    display: flex;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .city {
     font-family: Georgia, 'Times New Roman', Times, serif;

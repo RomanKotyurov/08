@@ -1,7 +1,5 @@
 let loadButton = document.getElementById('loadButton')
 loadButton.onclick = () => {
-    console.log('Work OK')
-    // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
     async function success(position) {
         const latitude = position.coords.latitude;
@@ -21,7 +19,6 @@ loadButton.onclick = () => {
         let weather = document.getElementById('weather')
         weather.innerText = 'Сейчас ' + resJson.weather[0].description
 
-
         let temp = document.getElementById('temp')
         temp.innerText = 'Температура: ' + Math.round(resJson.main.temp - 273) + ' C'
 
@@ -33,6 +30,9 @@ loadButton.onclick = () => {
 
         let wind = document.getElementById('wind')
         wind.innerText = 'Ветер: ' + resJson.wind.speed  + ' м/сек'
+
+        let picture_bg = document.getElementById('picture-bg')
+        picture_bg.classList.toggle('display-none')
 
         let picture = document.getElementById('picture')
         picture.src = `https://openweathermap.org/img/wn/${resJson.weather[0].icon}@2x.png`
